@@ -24,6 +24,7 @@ What did the user give you?
 
 | Input | Action |
 |-------|--------|
+| Missing any of: **subject matter**, **context**, or **>=1 reference material** | **Do not draft yet.** Ask for the missing items and wait. |
 | Path or paste of an **existing** draft | **Revise**: preserve CDC table, CMS markers (`\<Tap to expand\>`, hidden blocks), `![][imageN]`, `~~strikethrough~~` unless they ask to finalise/clean. |
 | **Net-new** topic + specs (Jira, rollout, key facts) | **Draft**: open with CDC cover table (see REFERENCE), then body. |
 | User references **Help Centre Update** files in Downloads | **Evidence first**: read those files (partial read; see below). |
@@ -35,13 +36,18 @@ If **market** (e.g. SG) or **article type** is unclear, ask one short question b
 
 ## Workflow
 
-1. Confirm **audience**: default is **merchant** readers on the Help Centre unless the user says otherwise.
-2. If the doc is CDC-tracked, **lead with the CDC metadata table** (REFERENCE template). Fill known cells from user/Jira; use placeholders for unknowns.
-3. For **updates**, include the line: `**NEW CONTENT highlighted in yellow**` when the user is following that house style (omit if they say it is final/publish-ready).
-4. **Body**: benefit-led, actionable steps, British English, sentence case for body copy. Define **Grab Merchant Centre (GMC)** on first use, then **GMC** is acceptable.
-5. **Images**: do not delete or rewrite `![][imageN]` (or equivalent) unless the user asks. For new screenshots, note placeholders and suggest approved sources (templatised MEX comms KVs, icon stock library) in comments or a short "Assets" note if useful.
-6. **Regulatory or policy claims**: only state what the user or linked Jira/spec provided. If unknown, say Grab will share more detail later—do not invent dates or legal obligations.
-7. **Final packaging (default)**: save the final article locally as a `.docx` file for direct editing/publishing.
+1. **Mandatory intake gate (always)**: before writing any article copy, verify the user has provided all three:
+   - **Subject matter** (what the article is about)
+   - **Context** (audience/use-case, rollout, or objective)
+   - **At least 1 reference material** (file, link, ticket, or pasted source text)
+   If any one is missing, **re-prompt for missing items only** and do not draft yet.
+2. Confirm **audience**: default is **merchant** readers on the Help Centre unless the user says otherwise.
+3. If the doc is CDC-tracked, **lead with the CDC metadata table** (REFERENCE template). Fill known cells from user/Jira; use placeholders for unknowns.
+4. For **updates**, include the line: `**NEW CONTENT highlighted in yellow**` when the user is following that house style (omit if they say it is final/publish-ready).
+5. **Body**: benefit-led, actionable steps, British English, sentence case for body copy. Define **Grab Merchant Centre (GMC)** on first use, then **GMC** is acceptable.
+6. **Images**: do not delete or rewrite `![][imageN]` (or equivalent) unless the user asks. For new screenshots, note placeholders and suggest approved sources (templatised MEX comms KVs, icon stock library) in comments or a short "Assets" note if useful.
+7. **Regulatory or policy claims**: only state what the user or linked Jira/spec provided. If unknown, say Grab will share more detail later—do not invent dates or legal obligations.
+8. **Final packaging (default)**: save the final article locally as a `.docx` file for direct editing/publishing.
    - Use **Word-native heading styles** (`Heading 1`, `Heading 2`, `Heading 3`) instead of manual bold-only headings.
    - Apply **real table styling** for CDC metadata tables (header emphasis, borders, alignment, readable cell padding), not plain text tables.
    - Preserve links as clickable hyperlinks.
@@ -87,6 +93,7 @@ When revising legacy drafts that say "customer" for end users, **rewrite to cons
 
 ## Anti-patterns
 
+- Generating article content before collecting **subject matter + context + >=1 reference**.
 - **Customer** for Grab end users.
 - US spelling in SG (or other UK-English markets) copy unless the user specifies US English for that market.
 - **MEX** / **DAX** in **merchant-facing** article body—use approved partner-facing terms instead.
@@ -95,6 +102,7 @@ When revising legacy drafts that say "customer" for end users, **rewrite to cons
 
 ## Done when (quality bar)
 
+- [ ] Intake gate passed: subject matter, context, and >=1 reference material are provided.
 - [ ] CDC table present when applicable; placeholders only where data is truly unknown.
 - [ ] British English; approved product/partner naming.
 - [ ] **No "customer/customers" for Grab end users** in produced copy (grep your own output mentally).
